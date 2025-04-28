@@ -253,7 +253,8 @@ main {
 
 .service-description{
     margin-top: 15px;
-    width: 75%;
+    width: 100%;
+    margin-right: 20px;
 }
 
 .service-left p {
@@ -289,7 +290,7 @@ main {
 
 .service{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 20px;
     align-items: center;
 }
@@ -309,26 +310,54 @@ main {
 
 .service-right-top {
     display: grid;
+    place-items: center;
+    position: relative;
+    gap: 2rem;
 }
 
 
 .service-right-grid {
-    grid-row: 1;
-    margin-right: 10px;
-    padding: 20px;
-    border-radius: 20px;
-    margin: 5px;
-    border: 1px solid rgb(192, 192, 192);
+    grid-row: 4;
+    width: 300px;
     height: 100%;
+    background: rgb(244, 244, 244);
+    border: 1px solid rgb(220, 220, 220);
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 
 .service-right-grid hr{
-    width: 50%;
-    display: flex;
-    align-items: start;
+    width: 50px;
+    margin-left: 0;
+    color: black;
 }
 
+.service-right-grid h2{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+
+.service-right-icon{
+    display: flex;
+    margin-right: 0;
+    font-size: 25px;
+}
+
+.service-right-grid-footer{
+    display: flex;
+    justify-content: end;
+    margin-right: 0;
+}
+
+.service-right-grid p {
+    color: rgb(111, 111, 111);
+    font-size: 15px;
+}
 
 @media screen and (max-width: 950px) {
     body{
